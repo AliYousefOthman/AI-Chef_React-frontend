@@ -13,7 +13,7 @@ export default function Body() {
 
 useEffect(() => {
     if (bo && recipe.current !== null){
-        resultRef.current.scrollIntoView();
+        resultRef.current.scrollIntoView({behavior : "smooth"}); // scrolling smoothly
     }
 },[bo])
 
